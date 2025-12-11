@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stopwatch • PRODIGY_WD_02 • Vinit Mishra</title>
+  <meta name="description" content="Stopwatch app - Prodigy InfoTech Task 02" />
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <main class="wrap" role="main">
+    <header class="header">
+      <h1>Stopwatch</h1>
+      <p class="sub">Task 02 — Prodigy InfoTech Web Dev Internship</p>
+    </header>
+
+<section class="stopwatch" aria-label="stopwatch">
+  <div class="display" id="display" aria-live="polite">00:00:00.000</div>
+
+  <div class="controls">
+    <button id="startBtn" class="btn primary">Start</button>
+    <button id="stopBtn" class="btn" disabled>Stop</button>
+    <button id="lapBtn" class="btn" disabled>Lap</button>
+    <button id="resetBtn" class="btn" disabled>Reset</button>
+  </div>
+
+  <div class="laps" id="lapsWrap" aria-label="laps">
+    <h2>Laps</h2>
+    <ol id="lapsList"></ol>
+  </div>
+
+  <div class="links">
+    <a class="link" href="https://github.com/vinitmishra17/PRODIGY_WD_02" target="_blank" rel="noopener">View Source</a>
+    <a class="link" href="https://vinitmishra17.github.io/PRODIGY_WD_02/" target="_blank" rel="noopener">Live Demo</a>
+  </div>
+
+</section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
