@@ -1,0 +1,38 @@
+:root {
+  --bg:#07122b;
+  --card:#0b1726;
+  --accent:#7c5cff;
+  --muted:#9aa4b2;
+  --white:#f1f5f9;
+  --radius:12px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,#041222,#07122b);color:var(--white)}
+.wrap{max-width:880px;margin:40px auto;padding:20px}
+.header{text-align:left}
+.header h1{margin:0;font-size:2.1rem}
+.sub{color:var(--muted);margin:6px 0 18px}
+
+.stopwatch{background:rgba(255,255,255,0.02);padding:28px;border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+.display{font-weight:700;font-size:2.2rem;text-align:center;padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border-radius:10px;margin-bottom:18px}
+
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:center;margin-bottom:16px}
+.btn{padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--white);font-weight:600;cursor:pointer}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#a78bfa);color:#07122b;border:none;box-shadow:0 8px 24px rgba(124,92,255,0.14)}
+.btn:disabled{opacity:0.5;pointer-events:none;cursor:default}
+
+.laps{margin-top:8px}
+.laps h2{margin:6px 0;color:var(--muted);font-size:0.95rem}
+#lapsList{list-style:none;padding-left:0;margin:0;max-height:220px;overflow:auto}
+#lapsList li{padding:8px 10px;background:rgba(0,0,0,0.12);border-radius:8px;margin-bottom:8px;display:flex;justify-content:space-between;font-weight:600}
+
+.links{display:flex;gap:12px;justify-content:center;margin-top:18px}
+.link{color:var(--accent);text-decoration:none;font-weight:600}
+
+/* responsive */
+@media (max-width:520px){
+  .display{font-size:1.5rem}
+  .controls{gap:8px}
+  .wrap{padding:12px;margin:18px auto}
+}
