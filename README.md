@@ -14,5 +14,3 @@ https://vinitmishra17.github.io/PRODIGY_WD_02/
 ## Tech
 HTML5, CSS3, Vanilla JavaScript
 
-## How to Run Locally
-1. Clone:
